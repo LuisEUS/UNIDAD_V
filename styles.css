@@ -1,0 +1,309 @@
+ul, ol { /*lista desordenada y lista ordenada*/
+    list-style:none;
+}
+
+.nav > li {/*Definimos el primer item del menú de navegación*/
+    float:left; /*Alineamos el menú de forma horizontal con un despliegue hacia la derecha*/
+}
+.nav li a {/*item del menú de navegación*/
+    background-color: rgb(29, 29, 184);/*Color del fondo del menú de navegación*/
+    color: white;/*Color para el texto englobado en el menú*/
+    text-decoration:none;/*formato de subrayado de texto*/
+    padding:10px 12px; /*espacio de relleno de todos los lados del elemento*/
+    display:block;/*indica que el elemento se va a comportar como un bloque*/
+}
+.nav li a:hover {/*item flotante del menú de navegación*/
+    background-color:rgb(36, 36, 250);/*color del fondo del menú flotante*/
+}
+.nav li ul {/*item del menú de navegación*/
+    display:none; /*Instancia para poder ocultar y reaparecer la lista flotante en el menú*/
+    position:absolute; /*Posición del elemento con relacion al documento*/
+    min-width:140px; /*anchura minima del menú*/
+}
+.nav li:hover > ul {/*item flotante del menú de navegación*/
+    display:block;/*Utilizamos este comando para que el elemento se comporte como bloque*/
+}
+.nav li ul li {/*item del menú de navegación*/
+    position:relative; /*Posición del elemento con relacion al documento*/
+}
+.nav li ul li ul {/*item del menú de navegación*/
+    right:-1300px; /*Posición del elemento con relacion hacia la derecha*/
+    top:0px; /*Posición del elemento con relacion a la parte superior*/
+}
+table.table2{/*css para la tabla*/
+    font-family: Georgia, serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: -1px;
+    line-height: 1.2em;
+    border-collapse:collapse;
+    text-align:center;
+}
+.table2 thead th, .table2 tfoot td{/*Estilos para pie y cabecera*/
+    padding:20px 10px 40px 10px;
+    color:#fff;
+    font-size: 26px;
+    background-color:#222;
+    font-weight:normal;
+    border-right:1px dotted #666;
+    border-top:3px solid #666;
+    -moz-box-shadow:0px -1px 4px #000;
+    -webkit-box-shadow:0px -1px 4px #000;
+    box-shadow:0px -1px 4px #000;
+    text-shadow:0px 0px 1px #fff;
+    text-shadow:1px 1px 1px #000;
+}
+.table2 tfoot th{/*estilo para relleno del pie*/
+    padding:10px;
+    font-size:18px;
+    text-transform:uppercase;
+    color:#888;
+}
+.table2 tfoot td{/*estilo para el sombreado de las celdas al pie*/
+    font-size:36px;
+    color:#EF870E;
+    border-top:none;
+    border-bottom:3px solid #666;
+    -moz-box-shadow:0px 1px 4px #000;
+    -webkit-box-shadow:0px 1px 4px #000;
+    box-shadow:0px 1px 4px #000;
+}
+.table2 thead th:empty{/*estilo para las celdas en cabecera*/
+    background:transparent;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    box-shadow:none;
+}
+.table2 thead :nth-last-child(1){/*estilo para el borde de la ultima celda en cabecera*/
+    border-right:none;
+}
+.table2 thead :first-child,
+.table2 tbody :nth-last-child(1){
+    border:none;
+}
+.table2 tbody th{
+    text-align:right;
+    padding:10px;
+    color:#333;
+    text-shadow:1px 1px 1px #ccc;
+    background-color:#f9f9f9;
+}
+.table2 tbody td{
+    padding:10px;
+    background-color:#f0f0f0;
+    border-right:1px dotted #999;
+    text-shadow:-1px 1px 1px #fff;
+    text-transform:uppercase;
+    color:#333;
+}
+.table2 tbody span.check::before{
+    content : url(../images/check1.png)
+}
+a:visited {/*Margenes y espaciado de parrafos del texto*/
+}
+*/*Establece los valores del margen en 0*/
+{
+border: 0;
+margin: 0;
+}
+
+body /* CSS estilo del cuerpo de la página */
+{
+	background: #1B4F72 url(images/header.png) repeat-x top; /*color y seleccionar una imagen para fondo superior*/
+	font: 16px Tahoma, Arial, Helvetica, sans-serif; /*tamaño y tipo de fuente*/
+	color: #ffffff;/*Color de la fuente*/
+	margin-top: 10px;/*margen a 10 puntos*/
+}
+
+#main/* CSS Estilo principal de la página */
+{
+margin: 0 auto;
+width: 912px;
+background: url(images/table_back.jpg) repeat-y;
+}
+
+#header/* estilo de la cabecera de la página */
+{
+background: url(images/tec_head.png) no-repeat;/*Seleccionamos la imagen que será fondo de la cabecera*/
+width: 912px; /*Se define ancho y largo de la cabecera*/
+height: 262px;
+}
+
+/*css estilos de cabecera de la página*/
+#logo 
+{/*alineado del texto*/
+padding-left: 40px; /*relleno a la izquiera*/
+/*Relación del texto con respecto a la izquierda*/
+text-align: left;
+padding-top: 40px;/*Altura del texto y relacion con el tope*/
+height: 40px;
+}
+
+#logo a {/*la etiqueta logo a sirve para organizar y darle formato de colores al texto del encabezado*/
+	text-decoration: none; /*Estilo de subrayado del texto, ninguno*/
+	text-transform: uppercase; /*Transforma el texto a mayúscula*/
+	font-size: 14px; /*Tamaño de fuente*/
+	color: green; /*color de la fuente en verde*/
+	font-weight: bold; /*Estilo de la fuente: negrita*/
+}
+
+#logo H2 a/*Logo H2 funciona para alternar el tamaño de letra del subtitulo del encabezado*/
+{/*tamaño de fuente*/
+font-size: 28px;
+}
+
+/**/
+
+#content
+{
+width: 870px;
+padding: 15px;
+}
+
+#left
+{
+width: 580px;
+padding: 10px;
+}
+
+#left H1
+{
+color: white
+margin: 0;
+padding: 0;
+font-size: 24px;
+}
+#left H2
+{
+color: white
+margin: 0;
+padding: 0;
+font-size: 18px;
+padding-top: 10px;
+}
+
+#left a
+{
+ color: white
+}
+
+#left a:hover {
+	text-decoration: none;
+	color: #FF0000;
+}
+
+#left a:visited {
+	color: white
+}
+
+.small
+{
+margin: 15px;
+padding: 5px;
+border: 1px solid #99A067
+}
+
+#right
+{
+float: right;
+width: 254px;
+}
+#calendar1 {
+	padding: 0 10px 20px 10px;
+}
+
+#calendar table {
+	width: 100%;
+	text-align: center;
+}
+
+#calendar thead {
+	background: #F1F1F1;
+}
+
+#calendar tbody td {
+	border: 1px solid #F1F1F1;
+}
+
+#calendar #prev {
+	text-align: left;
+}
+
+#calendar #next {
+	text-align: right;
+}
+
+#calendar tfoot a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
+#calendar #now {
+	background: #b1b1b1;
+	border: 1px solid #000000;
+	font-weight: bold;
+	color: #ffffff
+}
+#sidebar 
+{
+width: 254px;
+}
+
+#sidebar ul 
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background: url(images/title_back.gif) no-repeat;
+}
+
+#sidebar li 
+{
+	margin-bottom: 15px;
+
+}
+
+#sidebar li ul {
+	padding: 10px;
+	border-top: none;
+}
+
+#sidebar li li {
+	margin: 0;
+	padding: 3px 0;
+}
+
+
+#sidebar li h2 {
+	height: 34px;
+	margin: 0;
+	padding: 10px 0 0 20px;
+	background: #8eabaf url(images/title.gif) no-repeat;
+	font-size: 18px;
+	color: #ffffff;
+	text-align:center;
+}
+
+#sidebar a:link {
+	text-decoration: none;
+}
+
+#sidebar a:hover {
+	text-decoration: underline;
+}
+#sidebar a:visited {
+		text-decoration: none;
+}
+
+#sidebar li a {
+	padding-left: 10px;
+	background: url(images/img09.gif) no-repeat 1px 5px;
+}
+
+.padding
+{
+padding: 10px;
+color:#FF0000;
+font-weight: bold;
+}
